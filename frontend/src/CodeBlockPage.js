@@ -22,6 +22,7 @@ const CodeBlockPage = ({selectedQuestion, onQuestionSelected }) => {
                                 />
 
                             {/* <p>You typed: {textBoxValue}</p> */}
+                            <button >Sumbit</button>
                       </div>
             ) : (
                 <div>
