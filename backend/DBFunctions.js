@@ -5,6 +5,7 @@ const collection = database.collection('Questions');
 // Collecting the entire documents of the questions.
 const getAllQuestion = async () =>{
     const res = client.connect().then(async() => {
+        console.log('Connected to DB');
         const questions = collection.find();
         const result = await questions.toArray();
         client.close();
