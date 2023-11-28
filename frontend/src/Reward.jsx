@@ -3,7 +3,7 @@ const Reward = () => {
 
     return (  
         <div>
-        <img src={imagePath}  style={{  width:'600px', height:'600px' }} />
+        <img src={imagePath}  style={{  width:'350px', height:'350px' }} />
       </div>
     );
 }

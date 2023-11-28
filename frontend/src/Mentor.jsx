@@ -38,7 +38,7 @@ const Mentor = ({textBoxValue,handleEditorChange}) => {
                                     height="50vh"
                                     width="100vh"
                                     language="javascript"
-                                    theme="vs-dark"
+                                    theme="hc-ligh"
                                     value={textBoxValue}
                                     onChange={handleEditorChange}
                                     

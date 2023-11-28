@@ -14,6 +14,7 @@ body{
 
 
 
+
 .navbar {
   padding: 20px;
   display: flex;
@@ -41,6 +42,49 @@ body{
   height: 15vh; /* Optional: Set the height to fill the viewport */
 }
 
+.lobby-page h1 {
+  margin-top: 10vh;
+}
+
+.lobby-page ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Style for list items */
+.lobby-page li {
+  margin-right: 100vh;
+  margin-bottom: 8px; /* Adjust as needed */
+  padding: 8px;
+  border-radius: 4px;
+  background-color: lightblue;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+  display: inline-flex;
+}
+
+/* Hover effect */
+.lobby-page li:hover {
+  background-color: #e0e0e0;
+}
+
+/* Optional: Add more styling for links within list items */
+.lobby-page li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+/* Optional: Style for visited links */
+.lobby-page li a:visited {
+  color: #555;
+}
+
+
+
+
+
 .question-holder {
   margin-top: 10px; /* Optional: Add some space between questions */
 }
@@ -49,12 +93,23 @@ body{
   list-style-type: none; /* Remove the default list-style dot */
 }
 
+.question-context {
+  align-self: flex-start; /* Add this line to align the question context to the left */
+  text-align: left; /* Optional: Align text within the question context to the left */
+  margin-left: 40vh;
+}
+
+.question-context p{
+  margin-top:10px;
+}
+
 .code-block-page-content {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 10; /* This makes the container take the full height of the viewport */
+  height: 70vh; /* Update the height to take the full height of the viewport */
+  margin-top: 5vh;
 }
 
 .code-block-page-content p{
@@ -70,9 +125,74 @@ body{
 }
 
 .mentor-context h1{
-  color: green;
+  color: #B83D57;
+  margin-bottom: 10px; /* Add margin at the bottom of the h1 to create space */
 }
 
+
 .student-context h1{
-  color: green;
+  color: #495791;
+  margin-bottom: 10px; /* Add margin at the bottom of the h1 to create space */
 }
+
+.back-buttom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10vh; /* Adjust the height as needed */
+}
+
+.back-buttom button{
+  margin-top: 7%;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid #f1356d; /* Border color */
+  color: #f1356d; /* Text color */
+  background-color: #ffffff; /* Background color */
+  border-radius: 5px; /* Border radius for rounded corners */
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.back-buttom button:hover {
+  background-color: #3498db; /* Background color on hover */
+  color: #ffffff; /* Text color on hover */
+  border-color: #ffffff; /* Border color on hover */
+}
+
+.submit-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1vh; 
+  margin-top: 1vh;
+}
+
+/* Button Style */
+.submit-button button {
+  margin-top: 5%;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid #f1356d; /* Border color */
+  color: #f1356d; /* Text color */
+  background-color: #ffffff; /* Background color */
+  border-radius: 5px; /* Border radius for rounded corners */
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+/* Hover effect */
+.submit-button button:hover {
+  background-color: #f1356d; /* Background color on hover */
+  color: #ffffff; /* Text color on hover */
+  border-color: #ffffff; /* Border color on hover */
+}
+

@@ -178,7 +178,8 @@ const CodeBlockPage = ({selectedQuestion, onQuestionSelected, socket, isMentor ,
                     <div className="question-context">
                                 
                                 <h1>Question name: {question.name}</h1>
-                                <p>Description: {question.description}</p>
+                                <p>Description: </p>
+                                <pre>{question.description}</pre>
                     </div>
                     }
                     <div className="editor-context">
@@ -191,8 +192,11 @@ const CodeBlockPage = ({selectedQuestion, onQuestionSelected, socket, isMentor ,
                                     textBoxValue={textBoxValue} 
                                     handleEditorChange={handleEditorChange}
                                     question={question} />}
-                      
+
+                                    <div className="back-buttom">
                                     <button onClick={handleBack}>Back</button>
+                                    </div>
+                                    
                       </div>
                       </div>
                     
