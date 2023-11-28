@@ -16,6 +16,7 @@ const CodeBlockPage = ({selectedQuestion, onQuestionSelected, socket, isMentor ,
         navigate('/');
     }
 
+    // Find the question using ID.
     const findQuestion = (id) =>{
         for (let index in questions){
             if (questions[index]._id === id){
@@ -27,6 +28,7 @@ const CodeBlockPage = ({selectedQuestion, onQuestionSelected, socket, isMentor ,
         return null;
     }
 
+    // Socket code change between users.
     useEffect(()=>{
         socket.on('code-change',(data) =>{
             setTextBoxValue(data);
@@ -34,59 +36,57 @@ const CodeBlockPage = ({selectedQuestion, onQuestionSelected, socket, isMentor ,
 
     },[socket]);
 
+    // On page load getting the question using the id prop.
     useEffect(()=>{
         findQuestion(parseInt(id));
     },[]);
 
-
+    // Sending the code change from the user back the backend server.
     const handleEditorChange = (event) => {
-    try{    
+        try{    
         socket.emit('code-change', event);
         setTextBoxValue(event);
-    } catch (error) {
-        console.error('Socket emit error:', error);
-    }
+        } catch (error) {
+            console.error('Socket emit error:', error);
+        }
     }
 
     return (  
         <div className="code-block-page">
             {selectedQuestion ? (
                 
-                        <div className="code-block-page-content">
+                <div className="code-block-page-content">
 
                     {question && 
                     <div className="question-context">
-                                
                                 <h1>Question name: {question.name}</h1>
                                 <p>Description: </p>
                                 <pre>{question.description}</pre>
                     </div>
                     }
                     <div className="editor-context">
-                            
-                                {question && isMentor ? 
-                                
-                                <Mentor textBoxValue={textBoxValue} 
-                                        handleEditorChange={handleEditorChange}/> 
-                                : <Student 
-                                    textBoxValue={textBoxValue} 
-                                    handleEditorChange={handleEditorChange}
-                                    question={question} />}
+                    
+                        {question && isMentor ? 
+                        
+                        <Mentor textBoxValue={textBoxValue} 
+                                handleEditorChange={handleEditorChange}/> 
+                        : <Student 
+                            textBoxValue={textBoxValue} 
+                            handleEditorChange={handleEditorChange}
+                            question={question} />}
 
-                                    <div className="back-buttom">
-                                    <button onClick={handleBack}>Back</button>
-                                    </div>
+                            <div className="back-buttom">
+                                <button onClick={handleBack}>Back</button>
+                            </div>
                                     
-                      </div>
-                      </div>
+                    </div>
+                </div>
                     
             ) : (
                 <div/>
                 
             )
         }
-
-
         </div>
     );
 }

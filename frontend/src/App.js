@@ -7,6 +7,7 @@ import io from 'socket.io-client';
 
 function App() {
 
+  // Boolean flag for enabling question selection.
   const [selectedQuestion, setSelectedQuestion] = useState(false);
   const [socket, setSocket] = useState(null);
   const [isMentor, setIsMentor] = useState(false);
@@ -15,12 +16,13 @@ function App() {
   const URL = 'http://localhost:5000/allcodequestion';
   const socketPath = 'http://localhost:5000';
 
+  // Getting the Question from the DB.
   const getQuestionFromDB = (url) =>{
       fetch(url).then(response => response.json()).then(data => {setQuestions(data)})
       .catch(error => console.error(error));
-
   }
 
+  // Setting the question and role on app loading.
   useEffect(() => {
     getQuestionFromDB(URL);
     const newSocket = io(socketPath);
