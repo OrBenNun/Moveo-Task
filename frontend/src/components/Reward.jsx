@@ -1,5 +1,5 @@
 const Reward = () => {
-    const imagePath = process.env.PUBLIC_URL + '/congratulations.jpg';
+    const imagePath = process.env.PUBLIC_URL + '/smileyface.jpg';
 
     return (  
         <div>

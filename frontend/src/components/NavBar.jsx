@@ -1,3 +1,5 @@
+import '../css/navbar.css';
+
 const NavBar = () => {
     return (  
         <div className="navbar">
