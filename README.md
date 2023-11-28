@@ -9,7 +9,7 @@ The backend dynamically assigns roles based on the order of entry, with the ment
 
 Subsequently, the frontend requests questions from the MongoDB database on the backend server.
 
-Users can choose a question and modify the code using the Monaco editor. Any changes made are instantly reflected on the mentor's code screen.
+Users can choose a question and modify the code using the Monaco editor.<br> Any changes made are instantly reflected on the mentor's code screen.
 
 Importantly, the mentor has read-only access and cannot alter the student's code.
 
