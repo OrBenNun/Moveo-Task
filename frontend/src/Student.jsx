@@ -70,7 +70,9 @@ const Student = ({textBoxValue,handleEditorChange, question}) => {
                                     // readOnly={false}
                                     // readOnly={isMentor}
                                 /> 
-                                <button onClick={() => checkSolution(textBoxValue)}>Sumbit</button>
+                                <div className="submit-button">
+                                    <button onClick={() => checkSolution(textBoxValue)}>Sumbit</button>
+                                </div>
                                 </div>
                             
                             // <Editor

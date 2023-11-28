@@ -44,6 +44,7 @@ const LobbyPage = ({selectedQuestion, onQuestionSelected, socket, questions }) =
             {!selectedQuestion ? (
                 
                         <div>
+                            <h1>Pick a question:</h1>
                             {/* <p>Lobby Page</p> */}
                         {questions.map((question) => (
                         <div className="question-holder" key={question._id}>
