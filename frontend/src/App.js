@@ -13,8 +13,8 @@ function App() {
   const [isMentor, setIsMentor] = useState(false);
   const [questions,setQuestions] = useState([]);
 
-  const URL = 'http://localhost:5000/allcodequestion';
-  const socketPath = 'http://localhost:5000';
+  const URL = 'https://live-session-backend.onrender.com:5000/allcodequestion';
+  const socketPath = 'https://live-session-backend.onrender.com:5000';
 
   // Getting the Question from the DB.
   const getQuestionFromDB = (url) =>{
