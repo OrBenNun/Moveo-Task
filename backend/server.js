@@ -8,7 +8,7 @@ const cors = require('cors');
 
 app.use(cors());
 
-const PATH = 'https://live-study-session.onrender.com:3000';
+const PATH = 'https://live-study-session.onrender.com';
 const PORT = 5000;
 
 // Boolean of saving the mentor access.
