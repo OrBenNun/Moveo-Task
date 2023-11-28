@@ -63,3 +63,9 @@ Solution:
 var number = 16;
 var squareRoot = Math.sqrt(number);
 console.log(squareRoot);
+
+
+
+
+https://github.com/OrBenNun/Moveo-Task/assets/81117925/4f260063-315c-4981-b7af-7769ea56b002
+
