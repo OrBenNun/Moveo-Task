@@ -1,5 +1,5 @@
 
-This application seamlessly facilitates real-time coding sessions between mentors and students, utilizing the MERN stack—MongoDB, Express, React, and Node.js.
+This application seamlessly facilitates real-time coding sessions between mentors and students, utilizing the MERN stack—MongoDB, Express, React, and Node.js. <br>
 
 Here's how the application operates:
 
