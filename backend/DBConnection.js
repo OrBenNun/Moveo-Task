@@ -1,4 +1,7 @@
 require('dotenv').config();
+
+// Connecting into MongoDB atlas using .env params
+
 const { MongoClient, ServerApiVersion } = require('mongodb');
 const userName = process.env.DB_USER_NAME;
 const password = process.env.DB_PASSWORD;
@@ -11,7 +14,5 @@ const client = new MongoClient(uri, {
     deprecationErrors: true,
   }
 });
-
-
 
 module.exports = client;
