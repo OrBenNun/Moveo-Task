@@ -1,5 +1,6 @@
 // import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import { Route, HashRouter as Router, Routes } from "react-router-dom";
+// import { Route, HashRouter as Router, Routes } from "react-router-dom";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import { useState, useEffect } from "react";
 import NavBar from './NavBar';
 import LobbyPage from './LobbyPage';

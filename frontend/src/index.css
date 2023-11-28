@@ -5,8 +5,15 @@
   margin: 0;
   font-family: "Quicksand";
   color: #333;
-  background-color: #ffffff;
 }
+
+body{
+  background-color: #F2F7A1;
+}
+
+
+
+
 .navbar {
   padding: 20px;
   display: flex;
@@ -54,6 +61,18 @@
   margin-bottom: 10px;
 }
 
+.code-block-page-content button{
+  margin-bottom: 10px;
+}
+
 .code-block-page-content input{
   margin-bottom: 10px;
+}
+
+.mentor-context h1{
+  color: green;
+}
+
+.student-context h1{
+  color: green;
 }
